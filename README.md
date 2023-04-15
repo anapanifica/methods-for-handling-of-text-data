@@ -21,9 +21,20 @@ scrapy runspider lab1_spider.py -o lab1_data.json
 deactivate
 ```
 
+## Lab 2
+
+The data for this lab is an alphabet book of Gawarbati, an underdescribed Indo-Aryan language. It is a searchable pdf file which contains letters, words and several senences in Gawarbati (written in the Urdu-based script) and some informatin about the publisher in English.
+
+First, I converted the pdf file to txt on the university server.
+```
+pdftotext lab2_Gawarbati_alphabet_book.pdf
+```
+However, the resulting `lab2_Gawarbati_alphabet_book.txt` file contained a lot of hidden, unprintable charachters, and it was very difficult to remove all of them (at least, I couldn't). So, I exported the pdf file to txt using the implemented function in the Adobe Acrobat Reader, and saved it as `lab2_Gawarbati_alphabet_book2.txt`. Then I used the code `lab2_clean_data.py` to remove unprintable charachetrs (in this file it was easy to detect them), English words, numerals and punctuation. The raw UTF-8 text is saved in `lab2_res.txt`.
+
+
 ## Lab 4
 
-The data file 'lab4_corpus.flextext' is part of the corpus of Gawarbati (an underdescribed Indo-Aryan language) that I use in my PhD project. The corpus is tokenized and annotated in the program FLEx and stored in an xml-like format. The code `lab4_code.py` finds collocations which occur 10 times in the coorpus and makes a frequency list. Here is an output of the code:
+The data file `lab4_corpus.flextext` is part of the corpus of Gawarbati that I use in my PhD project. The corpus is tokenized and annotated in the program FLEx and stored in an xml-like format. The code `lab4_code.py` finds collocations which occur 10 times in the corpus and makes a frequency list. Here is an output of the code:
 
 ```
 [('kaɽi', 'tabaː'), ('alhamdu', 'lillah'), ('do', 'hazaːr'), ('hazaːr', 'bais'), ('ɕe', 'ʥausãː'), ('ʥaː', 'baten'), ('nun', 'sobaːra'), ('amai', 'ʥaua'), ('niɕisan', 'tʰanek'), ('ɕi', 'ʥausãː'), ('tʰanem', 'naːsir'), ('aːindaː', 'ʂaʦi'), ('haranua', 'niɕisan'), ('ɕila', 'ʨal'), ('ite', 'hadikaː')]
