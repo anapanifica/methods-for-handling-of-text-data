@@ -23,7 +23,7 @@ deactivate
 
 ## Lab 2
 
-The data for this lab is an alphabet book of Gawarbati, an underdescribed Indo-Aryan language. It is a searchable pdf file which contains letters, words and several senences in Gawarbati (written in the Urdu-based script) and some information about the publisher in English.
+The data for this lab is an alphabet book of Gawarbati, an underdescribed Indo-Aryan language. It is a searchable pdf file which contains letters, words and several sentences in Gawarbati (written in the Urdu-based script) and some information about the publisher in English.
 
 First, I converted the pdf file to txt on the university server.
 ```
@@ -41,6 +41,12 @@ The data file `lab4_corpus.flextext` is part of the corpus of Gawarbati that I u
 [['ki', 1009], ['bi', 709], ['au', 530], ['tʰana', 514], ['ama', 419], ['giri', 401], ['ba', 382], ['tine', 375], ['woi', 373], ['laka', 359], ['ʨi', 349], ['e', 338], ['lau', 322], ['na', 314], ['asa', 303]]
 ```
 
+## Lab 5
 
+In this lab, I trained tokenization and lemmatization models for Abaza, a Northwest Caucasian language. Following (this)[https://github.com/stanfordnlp/stanza-train] and (this)[https://stanfordnlp.github.io/stanza/training_and_evaluation.html] instructions, I cloned repositories `stanza` and `stanza-train`, removed the toy English data and replaced it by the Abaza data. I used (the UD treebank of Abaza)[https://github.com/UniversalDependencies/UD_Abaza-ATB/tree/dev] which contains about 100 sentences. I divided them into training data and test data, added required .txt files with plain sentences and trained models for tokenization and lemmatization. I did not manage to train models for pos-tagging and syntactic annotation because they require pretrained embedding vectors, and there are no pretrained embedding vectors for Abaza.
+
+After that, I created the folder `abq_stanza_resources` and several files inside that folder, following an instruction on adding a new language (here)[https://stanfordnlp.github.io/stanza/new_language.html]. I wrote a script `try.py` to check how the model tokenize and lemmatize sentences from the test data.
+
+As expected, the results for tokenization do not make much sense because the plain sentences in the Abaza treebank were already tokenized. The results for lemmatization are very bad. This is also expected because Abaza has a very complicated morphology.
 
 
