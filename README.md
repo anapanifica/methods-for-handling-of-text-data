@@ -49,4 +49,51 @@ After that, I created the folder `abq_stanza_resources` and several files inside
 
 As expected, the results for tokenization do not make much sense because the plain sentences in the Abaza treebank were already tokenized. The results for lemmatization are very bad. This is also expected because Abaza has a very complicated morphology, and the Abaza treebank is very small.
 
+An output of `try.py`:
+
+```
+2023-04-28 01:29:04 INFO: Loading these models for language: abq (Abaza):
+=======================================
+| Processor | Package                 |
+---------------------------------------
+| tokenize  | stanza/sav...kenizer.pt |
+| lemma     | stanza/sav...matizer.pt |
+=======================================
+
+2023-04-28 01:29:04 INFO: Using device: cpu
+2023-04-28 01:29:04 INFO: Loading: tokenize
+2023-04-28 01:29:05 INFO: Loading: lemma
+2023-04-28 01:29:05 INFO: Done loading processors!
+[
+  [
+    {
+      "id": 1,
+      "text": "сара",
+      "lemma": "сара",
+      "start_char": 0,
+      "end_char": 4
+    },
+    {
+      "id": 2,
+      "text": "сыхьиз",
+      "lemma": "х",
+      "start_char": 5,
+      "end_char": 11
+    },
+    {
+      "id": 3,
+      "text": "фатимапI",
+      "lemma": "а",
+      "start_char": 12,
+      "end_char": 20
+    }
+  ]
+]
+
+```
+
+
+
+
+
 
