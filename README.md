@@ -45,8 +45,8 @@ The data file `lab4_corpus.flextext` is part of the corpus of Gawarbati that I u
 
 In this lab, I trained tokenization and lemmatization models for Abaza, a Northwest Caucasian language. Following [this](https://github.com/stanfordnlp/stanza-train) and [this](https://stanfordnlp.github.io/stanza/training_and_evaluation.html) instructions, I cloned repositories `stanza` and `stanza-train`, removed the toy English data and replaced it by the Abaza data. I used [the UD treebank of Abaza](https://github.com/UniversalDependencies/UD_Abaza-ATB/tree/dev) which contains about 100 sentences. I divided them into training data and test data, added required .txt files with plain sentences and trained models for tokenization and lemmatization. I did not manage to train models for pos-tagging and syntactic annotation because they require pretrained embedding vectors, and there are no pretrained embedding vectors for Abaza.
 
-After that, I created the folder `abq_stanza_resources` and several files inside that folder, following an instruction on adding a new language [here](https://stanfordnlp.github.io/stanza/new_language.html). I wrote the script `try.py` to check how the model tokenize and lemmatize sentences from the test data.
+After that, I created the folder `abq_stanza_resources` and several files inside that folder, following the instruction on adding a new language [here](https://stanfordnlp.github.io/stanza/new_language.html). I wrote the script `try.py` to check how the model tokenizes and lemmatizes sentences from the test data.
 
-As expected, the results for tokenization do not make much sense because the plain sentences in the Abaza treebank were already tokenized. The results for lemmatization are very bad. This is also expected because Abaza has a very complicated morphology.
+As expected, the results for tokenization do not make much sense because the plain sentences in the Abaza treebank were already tokenized. The results for lemmatization are very bad. This is also expected because Abaza has a very complicated morphology, and the Abaza treebank is very small.
 
 
