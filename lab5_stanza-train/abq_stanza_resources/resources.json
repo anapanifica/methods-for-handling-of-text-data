@@ -1,0 +1,14 @@
+{
+  "abq": {
+    "tokenize": {
+      "abq_test_tokenizer": {
+      }
+    },
+    "default_processors": {
+      "tokenize": "abq_test_tokenizer"
+    },
+    "default_dependencies": {
+    },
+    "lang_name": "Abaza"
+  }
+}
