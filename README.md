@@ -23,7 +23,7 @@ deactivate
 
 ## Lab 2
 
-The data for this lab is an alphabet book of Gawarbati, an underdescribed Indo-Aryan language. It is a searchable pdf file which contains letters, words and several sentences in Gawarbati (written in the Urdu-based script) and some information about the publisher in English.
+The data for this lab is the alphabet book of Gawarbati, an underdescribed Indo-Aryan language. It is a searchable pdf file which contains letters, words and several sentences in Gawarbati (written in the Urdu-based script) and some information about the publisher in English.
 
 First, I converted the pdf file to txt on the university server.
 ```
@@ -96,6 +96,16 @@ The output of `try.py`:
   ]
 ]
 
+```
+
+
+# Lab6
+
+The data for this lab is the novel "War and Peace" by Leo Tolstoy (in the English translation). I downloaded the txt version of the novel from here: https://www.gutenberg.org/ebooks/2600. I tokenized the text and used `fasttext` to train a model, see `lab6_fasttext_train.py`. Then I checked the nearest neighbors of several words. This is the output for the nearest neighbors of the word _black_:
+
+```
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+[(0.9686030745506287, 'blue'), (0.9515423774719238, 'thick'), (0.949993908405304, 'bluish'), (0.9420170783996582, 'cloth'), (0.9416075348854065, 'swift'), (0.9343125224113464, 'shaggy'), (0.9326506853103638, 'hairy'), (0.9326242804527283, 'breeches'), (0.9290524125099182, 'pillows'), (0.9290413856506348, 'yellow')]
 ```
 
 
