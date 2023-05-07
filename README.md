@@ -101,7 +101,7 @@ The output of `try.py`:
 
 # Lab6
 
-The data for this lab is the novel "War and Peace" by Leo Tolstoy (in the English translation). I downloaded the txt version of the novel from here: https://www.gutenberg.org/ebooks/2600. I tokenized the text and used `fasttext` to train a model, see `lab6_fasttext_train.py`. Then I checked the nearest neighbors of several words. This is the output for the nearest neighbors of the word _black_:
+The data for this lab is the novel "War and Peace" by Leo Tolstoy (in the English translation). I downloaded the txt version of the novel from here: https://www.gutenberg.org/ebooks/2600. I tokenized the text and used `fasttext` to train a model, see `lab6_fasttext_train.py`. Then I checked the nearest neighbors of several words, see `lab6_fasttext_check.py`. This is the output for the nearest neighbors of the word _black_:
 
 ```
 Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
