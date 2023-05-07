@@ -1,6 +1,6 @@
 # Lab reports
 
-_Anastasia Panova, April 2023_
+_Anastasia Panova, April-May 2023_
 
 
 All files mentioned in the reports can be found here: https://github.com/anapanifica/methods-for-handling-of-text-data.
@@ -32,6 +32,12 @@ pdftotext lab2_Gawarbati_alphabet_book.pdf
 However, the resulting `lab2_Gawarbati_alphabet_book.txt` file contained a lot of hidden, unprintable charachters, and it was very difficult to remove all of them (at least, I couldn't). So, I exported the pdf file to txt using the implemented function in the Adobe Acrobat Reader, and saved it as `lab2_Gawarbati_alphabet_book2.txt`. Then I used the code `lab2_clean_data.py` to remove unprintable charachetrs (in this file it was easy to detect them), English words, numerals and punctuation. The raw UTF-8 text in Gawarbati is saved in `lab2_res.txt`.
 
 
+## Lab 3
+
+The code `lab3_txt2csv.py` reads the file `lab2_Gawarbati_alphabet_book2.txt` (also used in Lab 2), removes the beginning and the end of the book and saves it  in the tabular format to `lab3_alphabet.csv`. The csv-table follows the structure of the alphabet book and has the following columns: `letter`, `name of the letter`, `word1`, `word2`, `word3`. Normally in `word1` the target letter is in the beginning of the word, in `word2` the target letter is in the middle of the word, and in `word3` the target letter is in the end of the world. For some letters not all types of words are present in the book.
+
+
+
 ## Lab 4
 
 The data file `lab4_corpus.flextext` is part of the corpus of Gawarbati that I use in my PhD project. The corpus is transcribed in IPA, tokenized and annotated in the program FLEx and stored in an xml-like format. The code `lab4_code.py` finds collocations which occur 10 times in the corpus and makes a frequency list. Here is an output of the code:
@@ -49,7 +55,7 @@ After that, I created the folder `abq_stanza_resources` and several files inside
 
 As expected, the results for tokenization do not make much sense because the plain sentences in the Abaza treebank were already tokenized. The results for lemmatization are very bad. This is also expected because Abaza has a very complicated morphology, and the Abaza treebank is very small.
 
-An output of `try.py`:
+The output of `try.py`:
 
 ```
 2023-04-28 01:29:04 INFO: Loading these models for language: abq (Abaza):
