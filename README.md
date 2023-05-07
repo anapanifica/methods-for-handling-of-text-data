@@ -34,7 +34,7 @@ However, the resulting `lab2_Gawarbati_alphabet_book.txt` file contained a lot o
 
 ## Lab 3
 
-The code `lab3_txt2csv.py` reads the file `lab2_Gawarbati_alphabet_book2.txt` (also used in Lab 2), removes the beginning and the end of the book and saves it  in the tabular format to `lab3_alphabet.csv`. The csv-table follows the structure of the alphabet book and has the following columns: `letter`, `name of the letter`, `word1`, `word2`, `word3`. Normally in `word1` the target letter is in the beginning of the word, in `word2` the target letter is in the middle of the word, and in `word3` the target letter is in the end of the world. For some letters not all types of words are present in the book.
+The code `lab3_txt2csv.py` reads the file `lab2_Gawarbati_alphabet_book2.txt` (also used in Lab 2), removes the beginning and the end of the book and saves it  in the tabular format to `lab3_alphabet.csv`. The csv-table follows the structure of the alphabet book and has the following columns: `letter`, `name_of_the_letter`, `word1`, `word2`, `word3`. Normally in `word1` the target letter is in the beginning of the word, in `word2` the target letter is in the middle of the word, and in `word3` the target letter is in the end of the world. For some letters not all types of words are present in the book.
 
 
 
